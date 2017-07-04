@@ -2,7 +2,7 @@
 
 ## 1.1 Ideas
 
-There are different ways to help you break down a problem into smaller processable chunks, the ones covered in this book are:
+There are different ways to help you break down a problem into smaller processable chunks, the ones mentioned in this book are:
   * Flowcharts
   * Pseudocode
   * Math models
@@ -16,7 +16,7 @@ There are different ways to help you break down a problem into smaller processab
 AND (conjunction)
 ---
 | p | q | p & q |
-|---|---|-------|
+|---|---|:-----:|
 | T | T |   T   |
 | T | F |   F   |
 | F | T |   F   |
@@ -24,33 +24,35 @@ AND (conjunction)
 
 OR (disjunction)
 ---
-| p | q | p | q |
-|---|---|-------|
-| T | T |   T   |
-| T | F |   T   |
-| F | T |   T   |
-| F | F |   F   |
+| p | q | p \| q |
+|---|---|:------:|
+| T | T |    T   |
+| T | F |    T   |
+| F | T |    T   |
+| F | F |    F   |
 
 NOT (negation | inversion)
 ---
 | p | ~p |
-|---|----|
+|---|:--:|
 | T |  F |
 | F |  T |
 
-XOR (eXclusive OR) _p X q is T if either p or q is T, but not both_
+XOR (eXclusive OR)
 ---
 | p | q | p X q |
-|---|---|-------|
+|---|---|:-----:|
 | T | T |   F   |
 | T | F |   T   |
 | F | T |   T   |
 | F | F |   F   |
 
+  * p X q is T if either p or q is T, but not both
+
 IMPLIES (implication)
 ---
 | p | q | p -> q |
-|---|---|--------|
+|---|---|:------:|
 | T | T |   T    |
 | T | F |   F    |
 | F | T |   T    |
@@ -64,7 +66,7 @@ IMPLIES (implication)
 EQUIVALENCE
 ---
 | p | q | p <-> q |
-|---|---|---------|
+|---|---|:-------:|
 | T | T |    T    |
 | T | F |    F    |
 | F | T |    F    |
@@ -82,16 +84,19 @@ EQUIVALENCE
 Associativity
 
 `A AND (B AND C) = (A AND B) AND C`
+
 `A OR (B OR C) = (A OR B) OR C`
 
 Distributivity
 
 `A AND (B OR C) = (A AND B) OR (A AND C)`
+
 `A OR (B AND C) = (A OR B) AND (A OR C)`
 
 DeMorgan's Law
 
 `!(A AND B) = !A OR !B`
+
 `!A AND !B = !(A OR B)`
 
 ## 1.3 Counting

@@ -1,5 +1,11 @@
 const numbers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 
+/**
+ * Swaps two values in an array by the indexes given.
+ * @param {Array} list 
+ * @param {int} current (index of array)
+ * @param {int} smallest (index of array)
+ */
 function swap(list, current, smallest) {
   let copy = list[current];
 
@@ -7,6 +13,10 @@ function swap(list, current, smallest) {
   list[smallest] = copy;
 }
 
+/**
+ * Selection Sort Algorithm
+ * @param {Array} list 
+ */
 function selectionSort(list) {
   for (let current = 0, len = list.length; current < len - 1; current++) {
     let smallest = current;

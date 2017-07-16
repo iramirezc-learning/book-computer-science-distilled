@@ -10,3 +10,10 @@
   * (https://www.wolframalpha.com/)
   * (https://code.energy/rosen/)
   * (https://code.energy/wing/)
+
+## Chapter 2
+  * (http://code.energy/bigo)
+  * (https://code.energy/knuth)
+  * (http://code.energy/pnp)
+
+

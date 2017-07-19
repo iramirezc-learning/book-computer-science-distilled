@@ -2,6 +2,8 @@ __exploring-scents__
 
 _Floral fragances are made combining scents from flowers. Give a set of flowers `F`, how do you list all fragances that can be made?_
 
+__power-set__
+
 _pseudocode_
 
 ```js

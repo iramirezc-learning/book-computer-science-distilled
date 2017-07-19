@@ -2,6 +2,8 @@ __fish-reunion__
 
 _You're given a list of saltwater fish and a list of freshwater fish, both in alphabetical order. How do you create a list featuring all the fish in alphabetical order?_
 
+__merge-two-sorted-lists__
+
 _pseudocode_
 
 ```js

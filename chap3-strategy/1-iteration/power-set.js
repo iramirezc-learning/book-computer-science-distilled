@@ -54,3 +54,5 @@ console.log(totalFragances);
 // ['A', 'B', 'C']
 
 console.log(totalFragances.length); // 8
+
+module.exports = powerSet;

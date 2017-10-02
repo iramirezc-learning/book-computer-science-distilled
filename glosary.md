@@ -6,3 +6,7 @@
 
   * [grind -> reduce something in small particles ] (page 14)
     e.g. -> Let's now grind through a bunch of tools...
+
+## Chapter 3
+  * [sheer -> nothing other than | used for emphasis ] (page 41)
+  e.g. -> ... it relies on the computer's sheer force for checking every single one.

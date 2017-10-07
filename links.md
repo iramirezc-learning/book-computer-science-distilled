@@ -18,5 +18,6 @@
 
 ## Chapter 3
   * http://geek-and-poke.com/
+  * http://code.energy/8queens/
 
 

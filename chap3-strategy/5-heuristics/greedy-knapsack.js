@@ -1,3 +1,6 @@
+// Greedy version of the 
+// Brute force algorithm knapsack.js
+
 // Evil KnapSack. A greedy burglar breaks into your home
 // to steal the products you wanted to sell. He decides
 // to use your knapsack to carry the stolen items. Which
@@ -80,5 +83,11 @@ const stolenItems = greedyKanpsack(items, maxWeight);
 
 console.log('stolenItems->');
 console.log(stolenItems);
+// { name: 'iPhone', weight: 0.4, price: 8000 },
+// { name: 'Computer', weight: 2, price: 6000 },
+// { name: 'Smartphone', weight: 0.3, price: 5000 },
+// { name: 'Raspeberry', weight: 0.2, price: 1500 }
 console.log('Total Weight->', calculateTotalWeight(stolenItems));
+// 2.9
 console.log('Total Revenue->', calculateSalesValue(stolenItems));
+// 20500

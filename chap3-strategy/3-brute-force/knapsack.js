@@ -82,5 +82,12 @@ const itemsToCarry = knapsack(items, maxWeight);
 
 console.log('knapsack->');
 console.log(itemsToCarry);
+// { name: 'Computer', weight: 2, price: 6000 },
+// { name: 'Raspeberry', weight: 0.2, price: 1500 },
+// { name: 'Tablet', weight: 1, price: 3000 },
+// { name: 'Smartphone', weight: 0.3, price: 5000 },
+// { name: 'iPhone', weight: 0.4, price: 8000 }
 console.log('Total Weight->', calculateTotalWeight(itemsToCarry));
+// 3.9
 console.log('Total Revenue->', calculateSalesValue(itemsToCarry));
+// 23500

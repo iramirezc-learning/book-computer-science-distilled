@@ -203,3 +203,11 @@ const board = createBoard(BOARD_SIZE);
 const solution = queens(board, BOARD_SIZE);
 console.log('solution->');
 console.log(solution ? printBoard(solution) : solution);
+// [*][·][·][·][·][·][·][·]
+// [·][·][·][·][*][·][·][·]
+// [·][·][·][·][·][·][·][*]
+// [·][·][·][·][·][*][·][·]
+// [·][·][*][·][·][·][·][·]
+// [·][·][·][·][·][·][*][·]
+// [·][*][·][·][·][·][·][·]
+// [·][·][·][*][·][·][·][·]

@@ -6,8 +6,8 @@ _pseudocode_
 function greedy_knapsack(items, max_weight)
   bag_weight <- 0
   bag_items <- List.new
-  foreach item in sort_by_value(items);
-    if max_weight <= bag_weight + item.weight
+  foreach (item in sort_by_value(items))
+    if (max_weight <= bag_weight + item.weight)
       bag_weight <- bag_weight + item.weight
       bag_items.append(items)
   

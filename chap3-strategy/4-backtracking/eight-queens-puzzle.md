@@ -4,12 +4,12 @@ _pseudocode_
 
 ```js
 function queens(board)
-  if board.has_8_queens
+  if (board.has_8_queens)
     return board
-  foreach position in board.unattacked_positions
+  for each (position in board.unattacked_positions)
     board.place_queen(position)
     solution <- queens(board)
-    if solution
+    if (solution)
       return solution
     board.remove_queen(position)
   return false

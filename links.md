@@ -1,6 +1,7 @@
 # Links and references in the book
 
-## Chapter 1
+## Chapter 1: Basics
+
   * https://xkcd.com/
   * https://code.energy/coding-courses/
   * https://code.energy/UML/

@@ -1,9 +1,7 @@
-__max-of-three-numbers__
+# max-of-three-numbers
 
-_pseudocode_
-
-```js
-function maximum(A, B, C):
+```bash
+function maximum (A, B, C)
   if A > B
     if A > C
       max <- A
@@ -14,5 +12,6 @@ function maximum(A, B, C):
       max <- B
   else
       max <- C
-  print max
+
+  return max
 ```

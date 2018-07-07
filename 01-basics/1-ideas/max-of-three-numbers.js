@@ -20,4 +20,4 @@ function maximum(a, b, c) {
   }
 }
 
-console.log(maximum(1, 2, 3)); // 3
+module.exports = maximum;

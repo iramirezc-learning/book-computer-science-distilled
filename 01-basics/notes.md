@@ -1,8 +1,5 @@
 # Chapter 1 - Self-notes
 
-## 1.1 Ideas
-  * Math modeling is important to express abstract ideas.
-
 ## 1.2 Logic
   * Common math operators: variables and operators `+ / * -`
   * Logic math: `true` or `false`

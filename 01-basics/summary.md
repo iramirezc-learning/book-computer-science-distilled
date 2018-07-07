@@ -1,13 +1,155 @@
-# Chapter 1. Basics - Summary
+# Computer Science Distilled
 
-## 1.1 Ideas
+## Summary - Chapter 1: Basics
 
-There are different ways to help you break down a problem into smaller processable chunks, the ones mentioned in this book are:
-  * Flowcharts
-  * Pseudocode
-  * Math models
+> Computer science is not about machines, in the same way that astronomy is not about telescopes.
+> There is an essential unity of mathematics and computer science.
+>
+> -- _Edsger Dijkstra_
 
-## 1.2 Logic
+**:dart: Objectives:**
+
+> * _Model Ideas into flowcharts and pseudocode_
+> * _Know right from wrong with logic_
+> * _Count stuff_
+> * _Calculate probabilities_
+
+---
+
+### Section 1: Ideas
+
+#### 1.1 - Intro
+
+##### organizing methods - write everything down
+
+> It is very easy for our brains to overflow with fact and ideas, **dump all important stuff on paper**.
+
+##### ways to break down a problem
+
+> There are different ways to help you break down a problem into smaller processable chunks:
+>
+> * Flowcharts
+> * Pseudocode
+> * Math Modeling _(important to express abstract ideas)_
+
+#### 1.2 - Flowcharts
+
+##### guidelines to write flowcharts
+
+> * write states and instruction steps inside rectangles
+> * write decision steps, where the process may go different ways, inside diamonds
+> * never mix an instruction step with a decision step
+> * connect sequential steps with an arrow
+> * mark the start and end of the process
+
+##### example of a flowchart:
+
+![Flowchart for Maximum of three numbers](./img/max-of-three-numbers.flowchart.png)
+
+#### 1.3 - Pseudocode
+
+##### what's pseudocode?
+
+> human-friendly code that expresses computational processes
+
+##### example of a pseudocode:
+
+```bash
+# max of three numbers
+
+function maximum (A, B, C)
+  if A > B
+    if A > C
+      max <- A
+    else
+      max <- C
+  else
+    if B > C
+      max <- B
+  else
+      max <- C
+
+  return max
+```
+
+#### 1.4 - Mathematical Models
+
+**:bulb: Tip:**
+
+> _stand on the shoulders of giants who created these tools_
+
+##### what's a model?
+
+> a set of concepts that represents a problem and its characteristics
+
+##### example of a mathematical model:
+
+###### Problem: Livestock Fence
+
+> _Your farm has two types of livestock. You have 100 units of barbed wire to make a rectangular fence for the animals, with a straight division for separating them._
+>
+> _How do you frame the fence in order to maximize the pasture's area?_
+
+###### Solution: Livestock Fence
+
+> Quadratic equation:
+>
+> $$ A = w·l $$
+> $$ 100 = 2w + 3l $$
+> $$ l = \frac{100-2w}{3} $$
+> $$ A = \frac{100}{3}w - \frac{2}{3}w^2 $$
+
+---
+
+### Section 2: Logic
+
+#### 2.1 - Intro
+
+#### 2.2 - Operators
+
+#### 2.3 - Boolean Algebra
+
+#### 2.4 - Truth Tables
+
+#### 2.5 - Logic in Computing
+
+---
+
+### Section 3: Counting
+
+#### 3.1 - Intro
+
+#### 3.2 - Multiplying
+
+#### 3.3 - Permutations
+
+#### 3.4 - Permutations with identical items
+
+#### 3.5 - Combinations
+
+#### 3.6 - Sums
+
+---
+
+### Section 4: Probability
+
+#### 4.1 - Intro
+
+#### 4.2 - Counting Outcomes
+
+#### 4.3 - Independent Events
+
+#### 4.4 - Mutually Exclusive Events
+
+#### 4.5 - Complementary Events
+
+#### 4.6 - The Gambler's Fallacy
+
+#### 4.7 - Advanced Probabilities
+
+---
+
+## TODO reorganize
 
 ### Truth Tables
 

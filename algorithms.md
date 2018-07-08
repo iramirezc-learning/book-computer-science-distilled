@@ -8,6 +8,8 @@ List of algorithms and code examples in the book.
 
 ## Chapter 2: Complexity
 
+* [Selection Sort](./02-complexity/algorithms/selection-sort.js)
+
 ## Chapter 3. Strategy
 
 ## Chapter 4. Data

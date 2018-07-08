@@ -23,7 +23,7 @@ describe('Algorithm - Max of three numbers', function () {
   ];
 
   testCases.forEach(({ input, expected }) => {
-    it(`should return: ${expected} for input: ${input.join(' ')}`, function () {
+    it(`should return max: ${expected} for input: ${input.join(' ')}`, function () {
       assert.equal(maxOfThree.apply(null, input), expected, `should return max: ${expected}`);
     })
   })

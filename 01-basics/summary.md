@@ -264,6 +264,33 @@ Boolean Algebra simplifies logical expressions.
 
 #### 2.4 - Truth Tables
 
+##### A truth table has...
+
+> **columns** for each variable
+>
+> **rows** to represent possible combinations of variable states
+>
+> `Note:` A truth table with `30` variables can have more than a billion rows.
+>
+> $2^{30} = 1,073,741,824$
+
+##### example of a truth table
+
+|v1|v2|v3|
+|--|--|--|
+|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|:white_check_mark:|:white_check_mark:|:x:|
+|:white_check_mark:|:x:|:white_check_mark:|
+|:white_check_mark:|:x:|:x:|
+|:x:|:white_check_mark:|:white_check_mark:|
+|:x:|:white_check_mark:|:x:|
+|:x:|:x:|:white_check_mark:|
+|:x:|:x:|:x:|
+
+> `3` variables = `8` possible combinations:
+>
+> $2^3 = 8$
+
 #### 2.5 - Logic in Computing
 
 ---

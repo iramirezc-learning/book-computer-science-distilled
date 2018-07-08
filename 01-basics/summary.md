@@ -105,9 +105,11 @@ function maximum (A, B, C)
 
 #### 2.1 - Intro
 
-* Logic statements
-* Operators
-* Special Algebra
+Some of the topics covered in this section:
+
+> * Logic statements
+> * Operators
+> * Special Algebra
 
 ##### Logic Math
 

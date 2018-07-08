@@ -9,24 +9,25 @@ Code exercises, examples and personal notes.
 ## Quick Reference
 
 * See the [Algorithms List](./algorithms.md)
+* See the [Problems List](./problems.md)
 
 ## Summaries
 
-### [Chapter 1. Basics](./01-basics/summary.md)
+* [Chapter 1. Basics](./01-basics/summary.md)
 
-### Chapter 2: Complexity
+* Chapter 2: Complexity
 
-### Chapter 3. Strategy
+* Chapter 3. Strategy
 
-### Chapter 4. Data
+* Chapter 4. Data
 
-### Chapter 5. Algorithms
+* Chapter 5. Algorithms
 
-### Chapter 6. Databases
+* Chapter 6. Databases
 
-### Chapter 7. Computers
+* Chapter 7. Computers
 
-### Chapter 8. Programming
+* Chapter 8. Programming
 
 ## Tests
 

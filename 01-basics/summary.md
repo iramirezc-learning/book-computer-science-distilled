@@ -84,13 +84,13 @@ function maximum (A, B, C)
 
 ##### example of a mathematical model:
 
-###### Problem: Livestock Fence
+**Problem: Livestock Fence**
 
 > _Your farm has two types of livestock. You have 100 units of barbed wire to make a rectangular fence for the animals, with a straight division for separating them._
 >
 > _How do you frame the fence in order to maximize the pasture's area?_
 
-###### Solution: Livestock Fence
+**Solution:**
 
 > Quadratic equation:
 >
@@ -124,8 +124,6 @@ Some of the topics covered in this section:
 > operators: `+` `/` `*` `-`
 
 #### 2.2 - Operators
-
-Given `A = true` and `B = false`
 
 ##### NOT (negation | inversion)
 
@@ -292,6 +290,10 @@ Boolean Algebra simplifies logical expressions.
 > $2^3 = 8$
 
 #### 2.5 - Logic in Computing
+
+##### logic gates...
+
+> perform logic operations on electric current
 
 ---
 

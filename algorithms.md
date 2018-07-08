@@ -21,6 +21,10 @@ List of algorithms and code examples in the book.
 * [Merge two sorted arrays](./03-strategy/algorithms/merge-two-sorted-lists.js)
 * [Power Set - Iterative](./03-strategy/algorithms/power-set.js)
 
+### 3.2 Recursive
+
+* [Fibonacci](./03-strategy/algorithms/fibonacci.js)
+
 ## Chapter 4. Data
 
 ## Chapter 5. Algorithms

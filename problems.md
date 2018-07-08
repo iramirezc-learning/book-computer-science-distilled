@@ -5,6 +5,7 @@ List of problems in the book.
 ## Chapter 1. Basics
 
 * [Hot Server](./01-basics/problems/hot-server.md)
+* [Fragile System](./01-basics/problems/fragile-system.md)
 
 ## Chapter 2: Complexity
 

@@ -24,6 +24,7 @@ function selectionSort(list) {
         smallest = i;
       }
     }
+
     swap(list, current, smallest);
   }
 }

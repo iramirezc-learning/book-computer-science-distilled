@@ -6,6 +6,10 @@ Code exercises, examples and personal notes.
 
 > **reading in progress...**
 
+## Quick Reference
+
+* See the [Algorithms List](./algorithms.md)
+
 ## Summaries
 
 ### [Chapter 1. Basics](./01-basics/summary.md)

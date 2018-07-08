@@ -94,7 +94,7 @@ function maximum (A, B, C)
 
 > Quadratic equation:
 >
-> $$ A = w·l $$
+> $$ A = w \times l $$
 > $$ 100 = 2w + 3l $$
 > $$ l = \frac{100-2w}{3} $$
 > $$ A = \frac{100}{3}w - \frac{2}{3}w^2 $$
@@ -105,7 +105,86 @@ function maximum (A, B, C)
 
 #### 2.1 - Intro
 
+* Logic statements
+* Operators
+* Special Algebra
+
+##### Logic Math
+
+> `true`
+>
+> `false`
+
+##### Common math operators:
+
+> variables
+>
+> operators: `+` `/` `*` `-`
+
 #### 2.2 - Operators
+
+Given `A = true` and `B = false`
+
+##### Conditional Operator aka implication
+
+Dependency between variables
+
+> `A -> B` implies that `B` depends on `A` to be `true`
+>
+> Example: _If it rains, then I'll take my umbrella_
+>
+> _**Notice:** `A -> B` is NOT equivalent to `B -> A`_ this is called **inverse error**
+>
+> _**Notice:** `A -> B` is equivalent to `!A | B`_
+>
+> A `true` premise implies a `true` conclusion. `T -> T = T`
+>
+> A `true` premise can NOT imply a `false` conclusion. `T -> F = F`
+>
+> You can conclude anything from a `false` assumption. `F -> * = T`
+
+##### Negation Operator
+
+> `!A`
+
+##### Contrapositive
+
+> _If `A -> B` then the contrapositive is `!B -> !A`_
+>
+> Example: _If You love me, I'll kiss you_
+>
+> _**Notice:** `A -> B` is the same as `!B -> !A`_
+>
+> Example: _I won't kiss you if you don't love me_
+
+##### Biconditional (equivalence)
+
+> `A <-> B` expresses that `A` depends on `B` and viceversa
+>
+> Example: _I'll kiss you only if you love me_ or _Only if you love me I'll kiss you_
+
+##### And (conjunction)
+
+> `A & B` or $A \bigwedge B$
+
+##### Or (disjunction)
+
+> `A | B` or $A \bigvee B$
+
+##### Exclusive OR (XOR)
+
+> `A XOR B`
+>
+> _**Notice:** `A XOR B` is equivalent to `!(A <-> B)`_
+
+##### Logical operations table
+
+|`A`|`B`|`!A`|`A -> B`|`A <-> B`|`A & B`|`A | B`|`A xor B`|
+|:-:|:-:|:--:|:------:|:-------:|:-----:|:-----:|:-------:|
+| ✓ | ✓ | ✗  | ✓      | ✓       | ✓     | ✓     | ✗       |
+| ✓ | ✗ | ✗  | ✗      | ✗       | ✗     | ✓     | ✓       |
+| ✗ | ✓ | ✓  | ✓      | ✗       | ✗     | ✓     | ✓       |
+| ✗ | ✗ | ✓  | ✓      | ✓       | ✗     | ✗     | ✗       |
 
 #### 2.3 - Boolean Algebra
 

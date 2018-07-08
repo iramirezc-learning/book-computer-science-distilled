@@ -19,7 +19,7 @@ List of algorithms and code examples in the book.
 ### 3.1 Iteration
 
 * [Merge two sorted arrays](./03-strategy/algorithms/merge-two-sorted-lists.js)
-* [Power Set](./)
+* [Power Set - Iterative](./03-strategy/algorithms/power-set.js)
 
 ## Chapter 4. Data
 

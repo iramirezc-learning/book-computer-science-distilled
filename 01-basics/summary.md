@@ -125,7 +125,16 @@ function maximum (A, B, C)
 
 Given `A = true` and `B = false`
 
-##### Conditional Operator aka implication
+##### NOT (negation | inversion)
+
+> `!A` or `~A`
+
+| A | ~A |
+|---|:--:|
+| T |  F |
+| F |  T |
+
+##### IMPLIES (implication)
 
 Dependency between variables
 
@@ -136,6 +145,14 @@ Dependency between variables
 > _**Notice:** `A -> B` is NOT equivalent to `B -> A`_ this is called **inverse error**
 >
 > _**Notice:** `A -> B` is equivalent to `!A | B`_
+
+| A | B | A -> B |
+|---|---|:------:|
+| T | T |   T    |
+| T | F |   F    |
+| F | T |   T    |
+| F | F |   T    |
+
 >
 > A `true` premise implies a `true` conclusion. `T -> T = T`
 >
@@ -143,11 +160,7 @@ Dependency between variables
 >
 > You can conclude anything from a `false` assumption. `F -> * = T`
 
-##### Negation Operator
-
-> `!A`
-
-##### Contrapositive
+##### CONTRAPOSITIVE
 
 > _If `A -> B` then the contrapositive is `!B -> !A`_
 >
@@ -157,27 +170,57 @@ Dependency between variables
 >
 > Example: _I won't kiss you if you don't love me_
 
-##### Biconditional (equivalence)
+##### EQUIVALENCE (biconditional)
 
 > `A <-> B` expresses that `A` depends on `B` and viceversa
 >
 > Example: _I'll kiss you only if you love me_ or _Only if you love me I'll kiss you_
 
-##### And (conjunction)
+| A | B | A <-> B |
+|---|---|:-------:|
+| T | T |    T    |
+| T | F |    F    |
+| F | T |    F    |
+| F | F |    T    |
+
+##### AND (conjunction)
 
 > `A & B` or $A \bigwedge B$
 
-##### Or (disjunction)
+| A | B | A & B |
+|---|---|:-----:|
+| T | T |   T   |
+| T | F |   F   |
+| F | T |   F   |
+| F | F |   F   |
+
+##### OR (disjunction)
 
 > `A | B` or $A \bigvee B$
 
-##### Exclusive OR (XOR)
+| A | B | A \| B |
+|---|---|:------:|
+| T | T |    T   |
+| T | F |    T   |
+| F | T |    T   |
+| F | F |    F   |
+
+##### XOR (eXclusive OR)
 
 > `A XOR B`
 >
 > _**Notice:** `A XOR B` is equivalent to `!(A <-> B)`_
 
-##### Logical operations table
+| A | B | A X B |
+|---|---|:-----:|
+| T | T |   F   |
+| T | F |   T   |
+| F | T |   T   |
+| F | F |   F   |
+
+> _**Notice:** `A X B` is `T` if either `A` or `B` is `T`, but not both._
+
+##### Summary - Logical operations table
 
 |`A`|`B`|`!A`|`A -> B`|`A <-> B`|`A & B`|`A | B`|`A xor B`|
 |:-:|:-:|:--:|:------:|:-------:|:-----:|:-----:|:-------:|
@@ -186,7 +229,36 @@ Dependency between variables
 | ✗ | ✓ | ✓  | ✓      | ✗       | ✗     | ✓     | ✓       |
 | ✗ | ✗ | ✓  | ✓      | ✓       | ✗     | ✗     | ✗       |
 
+##### Operators Precedence
+
+> 1. `NOT`
+> 2. `AND`,
+> 3. `OR`, `XOR`
+> 4. `IMPLIES`, `EQUIVALENCE`
+
 #### 2.3 - Boolean Algebra
+
+Boolean Algebra simplifies logical expressions.
+
+`Boolean` comes from __George Bool.__
+
+##### Associativity
+
+> `A AND (B AND C) = (A AND B) AND C`
+>
+> `A OR (B OR C) = (A OR B) OR C`
+
+##### Distributivity
+
+> `A AND (B OR C) = (A AND B) OR (A AND C)`
+>
+> `A OR (B AND C) = (A OR B) AND (A OR C)`
+
+##### De Morgan's Law
+
+> `!(A AND B) = !A OR !B`
+>
+> `!A AND !B = !(A OR B)`
 
 #### 2.4 - Truth Tables
 
@@ -226,96 +298,6 @@ Dependency between variables
 
 #### 4.7 - Advanced Probabilities
 
----
+## References:
 
-## TODO reorganize
-
-### Truth Tables
-
-(http://kias.dyndns.org/comath/21.html)
-
-AND (conjunction)
----
-| p | q | p & q |
-|---|---|:-----:|
-| T | T |   T   |
-| T | F |   F   |
-| F | T |   F   |
-| F | F |   F   |
-
-OR (disjunction)
----
-| p | q | p \| q |
-|---|---|:------:|
-| T | T |    T   |
-| T | F |    T   |
-| F | T |    T   |
-| F | F |    F   |
-
-NOT (negation | inversion)
----
-| p | ~p |
-|---|:--:|
-| T |  F |
-| F |  T |
-
-XOR (eXclusive OR)
----
-| p | q | p X q |
-|---|---|:-----:|
-| T | T |   F   |
-| T | F |   T   |
-| F | T |   T   |
-| F | F |   F   |
-
-  * p X q is T if either p or q is T, but not both
-
-IMPLIES (implication)
----
-| p | q | p -> q |
-|---|---|:------:|
-| T | T |   T    |
-| T | F |   F    |
-| F | T |   T    |
-| F | F |   T    |
-
-  * A `TRUE` premise implies a `TRUE` conclusion, `T -> T is T`
-  * A `TRUE` premise can not imply a `FALSE` conclusion, `T -> F is F`
-  * You can conclude anything from a `FALSE` assumption, `F -> * is T`
-  * CONTRAPOSITIVE. If `A -> B`, its contrapositive is `!B -> !A`
-
-EQUIVALENCE
----
-| p | q | p <-> q |
-|---|---|:-------:|
-| T | T |    T    |
-| T | F |    F    |
-| F | T |    F    |
-| F | F |    T    |
-
-### Operators Precedence
-
-  1. NOT
-  2. AND,
-  3. OR, XOR
-  4. IMPLIES, EQUIVALENCE
-
-### Boolean Algebra
-
-Associativity
-
-`A AND (B AND C) = (A AND B) AND C`
-
-`A OR (B OR C) = (A OR B) OR C`
-
-Distributivity
-
-`A AND (B OR C) = (A AND B) OR (A AND C)`
-
-`A OR (B AND C) = (A OR B) AND (A OR C)`
-
-DeMorgan's Law
-
-`!(A AND B) = !A OR !B`
-
-`!A AND !B = !(A OR B)`
+* [Logical Operations and Truth Tables](http://kias.dyndns.org/comath/21.html)

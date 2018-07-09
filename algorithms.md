@@ -29,7 +29,7 @@ List of algorithms and code examples in the book.
 
 ### 3.3 Brute Force
 
-* Best Trade
+* [Best Trade - Brute Force](./03-strategy/algorithms/best-trade.js)
 * Knapsack
 
 ### 3.4 Backtracking

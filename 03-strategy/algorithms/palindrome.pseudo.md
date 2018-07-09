@@ -1,9 +1,7 @@
-__palindrome__
+# palindrome
 
-_pseudocode_
-
-```js
-function palindrome(word)
+```bash
+function palindrome (word)
   if (word.length <= 1)
     return true
   if (word.first_char != word.last_char)

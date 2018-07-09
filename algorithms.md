@@ -1,4 +1,4 @@
-# Algorithms List
+# Algorithms and Data Structures List
 
 List of algorithms and code examples in the book.
 
@@ -21,9 +21,36 @@ List of algorithms and code examples in the book.
 * [Merge two sorted arrays](./03-strategy/algorithms/merge-two-sorted-lists.js)
 * [Power Set - Iterative](./03-strategy/algorithms/power-set.js)
 
-### 3.2 Recursive
+### 3.2 Recursion
 
-* [Fibonacci](./03-strategy/algorithms/fibonacci.js)
+* [nth Fibonacci](./03-strategy/algorithms/fibonacci.js)
+* [Palindrome](./03-strategy/algorithms/palindrome.js)
+* Power Set - Recursive
+
+### 3.3 Brute Force
+
+* Best Trade
+* Knapsack
+
+### 3.4 Backtracking
+
+* 8 Queen Puzzle
+
+### 3.5 Heuristics
+
+* Greedy Knapsack
+
+### 3.6 Divide and Conquer
+
+* Merge Sort
+* Trade
+* Knapsack - Divide and Conquer
+
+### 3.7 Dynamic Programming
+
+* Fibonacci
+* Knapsack - DP
+* Trade (Bottom-Up)
 
 ## Chapter 4. Data
 

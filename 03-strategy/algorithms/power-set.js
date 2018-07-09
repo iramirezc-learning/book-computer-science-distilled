@@ -1,6 +1,6 @@
 /**
  * Returns a recursive copy of an array.
- * @param {array} array to copy 
+ * @param {array} array to copy
  */
 function copyArray(array) {
   const copy = [];

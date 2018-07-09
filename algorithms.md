@@ -34,7 +34,8 @@ List of algorithms and code examples in the book.
 
 ### 3.4 Backtracking
 
-* [8 Queen Puzzle (OO Version)](./03-strategy/algorithms/eight-queens-puzzle.v1.js)
+* [8 Queens Puzzle](./03-strategy/algorithms/eight-queens-puzzle.v2.js)
+* [8 Queens Puzzle (OO Version)](./03-strategy/algorithms/eight-queens-puzzle.v1.js)
 
 ### 3.5 Heuristics
 

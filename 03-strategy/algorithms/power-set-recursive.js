@@ -1,3 +1,7 @@
+/**
+ * Returns a recursive copy of an array.
+ * @param {array} array to copy
+ */
 function copyArray(array) {
   const copy = [];
 
@@ -12,6 +16,10 @@ function copyArray(array) {
   return copy;
 }
 
+/**
+ * Creates a power set of a set recursively.
+ * @param {array} set
+ */
 function recursivePowerSet(set) {
   if (set.length === 0) {
     return [[]];
@@ -35,17 +43,4 @@ function recursivePowerSet(set) {
   return newSubset;
 }
 
-var testCases = [
-  { input: [], result: 1 },
-  { input: ['a'], result: 2 },
-  { input: ['a', 'b'], result: 4 },
-  { input: ['a', 'b', 'c'], result: 8 },
-  { input: ['a', 'b', 'c', 'd'], result: 16 },
-  { input: ['a', 'b', 'c', 'd', 'e'], result: 32 }
-];
-
-testCases.forEach(test => {
-  const result = recursivePowerSet(test.input);
-  console.log('result->', result);
-  console.log('PASS ->', result.length === test.result);
-})
+module.exports = recursivePowerSet;

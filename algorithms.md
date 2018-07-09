@@ -25,7 +25,7 @@ List of algorithms and code examples in the book.
 
 * [nth Fibonacci](./03-strategy/algorithms/fibonacci.js)
 * [Palindrome](./03-strategy/algorithms/palindrome.js)
-* Power Set - Recursive
+* [Power Set - Recursive](./03-strategy/algorithms/power-set-recursive.js)
 
 ### 3.3 Brute Force
 

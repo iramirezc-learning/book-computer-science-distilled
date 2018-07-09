@@ -1,5 +1,6 @@
 /**
  * Returns if a string is a palindrome.
+ * Technique: Recursion
  * @param {string} word 
  */
 function palindrome(word) {

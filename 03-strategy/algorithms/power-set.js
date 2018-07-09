@@ -20,6 +20,7 @@ function copyArray(array) {
  * Creates a power set of a set.
  * Power Set: is a set of all the subsets of a set.
  * Running Time: O(2^n)
+ * Technique: Iteration
  * @param {array} set 
  */
 function powerSet(set) {

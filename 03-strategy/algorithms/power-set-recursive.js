@@ -18,6 +18,7 @@ function copyArray(array) {
 
 /**
  * Creates a power set of a set recursively.
+ * Technique: Recursion
  * @param {array} set
  */
 function recursivePowerSet(set) {

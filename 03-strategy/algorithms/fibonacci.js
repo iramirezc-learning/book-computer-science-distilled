@@ -1,5 +1,6 @@
 /**
  * Returns the nth number of the Fibonnacci serie
+ * Technique: Recursion
  * @param {integer} n nth number to calculate
  */
 function fibonacci(n) {

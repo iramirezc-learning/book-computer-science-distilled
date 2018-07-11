@@ -43,7 +43,7 @@ List of algorithms and code examples in the book.
 
 ### 3.6 Divide and Conquer
 
-* Merge Sort
+* [Merge Sort](./03-strategy/algorithms/merge-sort.js)
 * Trade
 * Knapsack - Divide and Conquer
 

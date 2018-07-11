@@ -1,8 +1,8 @@
 const assert = require('assert');
 
-const selectionSort = require('./selection-sort');
+const mergeSort = require('./merge-sort');
 
-describe('Algorithm - Selection Sort', function () {
+describe('Algorithm - Merge Sort', function () {
   const testCases = [
     {
       input: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
@@ -20,8 +20,8 @@ describe('Algorithm - Selection Sort', function () {
 
   testCases.forEach(({ input, expected }) => {
     it(`should sort input: ${input.join(', ')}`, function () {
-      selectionSort(input);
-      assert.deepEqual(input, expected, `order should be: ${expected.join(', ')}. Given: ${input.join(', ')}`);
+      const result = mergeSort(input);
+      assert.deepEqual(result, expected, `order should be: ${expected.join(', ')}. Given: ${result.join(', ')}`);
     });
   });
 });

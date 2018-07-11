@@ -1,7 +1,8 @@
-// Merge Sort Algorithm
-
-// Algorithm Complexity: O(n log n)
-
+/**
+ * Merges two ordered lists into one.
+ * @param {array} left first sorted list
+ * @param {array} right second sorted list
+ */
 function merge(left, right) {
   const merged = [];
 
@@ -24,21 +25,21 @@ function merge(left, right) {
   return merged;
 }
 
+/**
+ * Merge Sort Algorithm
+ * Running Time: O(n log n)
+ * Technique: Divide and Conquer
+ * @param {Array} list List of numbers to be sorted
+ */
 function mergeSort(list) {
   if (list.length === 1) {
     return list;
   }
 
-  const middleIndex = Math.round(list.length / 2);
+  const middleIndex = Math.floor(list.length / 2);
   const secondHalf = list.splice(middleIndex);
 
   return merge(mergeSort(secondHalf), mergeSort(list));
 }
 
-// Start
-// ==============================
-const numbers = [10, 9, 8, 7, 6, 20, 4, 3, 2, 1];
-
-console.log('Sorted numbers->');
-console.log(mergeSort(numbers));
-// [ 1, 2, 3, 4, 6, 7, 8, 9, 10, 20 ]
+module.exports = mergeSort;

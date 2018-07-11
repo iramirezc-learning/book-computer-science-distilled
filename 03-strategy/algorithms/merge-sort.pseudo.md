@@ -1,11 +1,10 @@
-__merge-sort__
+# merge-sort
 
-_pseudocode_
-
-```js
+```bash
 function merge_sort(list)
-  if (list.length = 1)
+  if list.length = 1
     return list
+
   left <- list.first_half
   right <- list.last_half
 

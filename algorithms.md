@@ -49,7 +49,7 @@ List of algorithms and code examples in the book.
 
 ### 3.7 Dynamic Programming
 
-* Fibonacci
+* [Fibonacci - DP](./03-strategy/algorithms/dynamic-fibonacci.js)
 * Knapsack - DP
 * Trade (Bottom-Up)
 

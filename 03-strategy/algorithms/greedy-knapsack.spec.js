@@ -1,12 +1,12 @@
 const assert = require('assert');
 
-const knapsack = require('./knapsack');
+const greedyKnapsack = require('./greedy-knapsack');
 
-describe('Algorithm - Knapsack [Brute Force]', function () {
+describe('Algorithm - Greedy Knapsack [Heuristics]', function () {
   const testCases = [
     {
       input: {
-        maxWeight: 4,
+        maxWeight: 3,
         items: [
           {
             name: 'Computer',
@@ -51,23 +51,18 @@ describe('Algorithm - Knapsack [Brute Force]', function () {
         ]
       },
       expected: {
-        totalWeight: 3.9,
-        totalRevenue: 23500,
+        totalWeight: 2.9,
+        totalRevenue: 20500,
         itemsInBag: [
+          {
+            name: 'iPhone',
+            weight: 0.4,
+            price: 8000,
+          },
           {
             name: 'Computer',
             weight: 2,
             price: 6000,
-          },
-          {
-            name: 'Raspeberry',
-            weight: 0.2,
-            price: 1500,
-          },
-          {
-            name: 'Tablet',
-            weight: 1,
-            price: 3000,
           },
           {
             name: 'Smartphone',
@@ -75,10 +70,10 @@ describe('Algorithm - Knapsack [Brute Force]', function () {
             price: 5000,
           },
           {
-            name: 'iPhone',
-            weight: 0.4,
-            price: 8000,
-          }
+            name: 'Raspeberry',
+            weight: 0.2,
+            price: 1500,
+          },
         ]
       }
     }
@@ -89,9 +84,9 @@ describe('Algorithm - Knapsack [Brute Force]', function () {
     const {itemsInBag, totalWeight, totalRevenue} = expected;
 
     it(`should return the items: ${itemsInBag.map(i => i.name)}`, function () {
-      const result = knapsack(items, maxWeight);
-      const resultRevenue = knapsack.calculateSalesValue(result);
-      const resultWeight = knapsack.calculateTotalWeight(result);
+      const result = greedyKnapsack(items, maxWeight);
+      const resultRevenue = greedyKnapsack.calculateSalesValue(result);
+      const resultWeight = greedyKnapsack.calculateTotalWeight(result);
 
       assert.equal(resultRevenue, totalRevenue, `Incorrect revenue: ${resultRevenue}`);
       assert.equal(resultWeight, totalWeight, `Incorrect weight: ${totalWeight}`);

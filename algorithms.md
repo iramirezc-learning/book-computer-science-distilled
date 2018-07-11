@@ -39,7 +39,7 @@ List of algorithms and code examples in the book.
 
 ### 3.5 Heuristics
 
-* Greedy Knapsack
+* [Greedy Knapsack](./03-strategy/algorithms/greedy-knapsack.js)
 
 ### 3.6 Divide and Conquer
 

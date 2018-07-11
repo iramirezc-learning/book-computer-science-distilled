@@ -13,6 +13,7 @@ function swap(list, current, smallest) {
 
 /**
  * Selection Sort Algorithm
+ * Running Time: O(n^2)
  * @param {Array} list 
  */
 function selectionSort(list) {

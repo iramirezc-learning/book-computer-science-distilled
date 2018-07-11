@@ -1,5 +1,5 @@
 /**
- * Returns the nth number of the Fibonnacci serie
+ * Returns the nth number of the Fibonacci series
  * Technique: Recursion
  * @param {integer} n nth number to calculate
  */

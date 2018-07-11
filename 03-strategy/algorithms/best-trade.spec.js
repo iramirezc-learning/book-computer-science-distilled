@@ -5,6 +5,14 @@ const bestTrade = require('./best-trade');
 describe('Algorithm - Best Trade [Brute Force]', function () {
   const testCases = [
     {
+      input: [27, 53, 7, 25, 33, 2, 32, 47, 43],
+      expected: {
+        maximum: 45,
+        buyingDate: 5,
+        sellingDate: 7
+      }
+    },
+    {
       input: [11, 5, 2, 6, 7, 8, 4, 10, 3, 4, 6, 9, 8, 1, 3],
       expected: {
         maximum: 8,

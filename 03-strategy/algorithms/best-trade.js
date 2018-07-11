@@ -6,7 +6,7 @@
  */
 
 /**
- * Finds maximum profit of buying and selling in
+ * Finds the maximum profit of buying and selling in
  * a list of prices.
  * Running time: O(n^2)
  * Technique: Brute Force

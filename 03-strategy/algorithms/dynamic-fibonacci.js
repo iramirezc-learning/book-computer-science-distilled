@@ -1,9 +1,9 @@
 
 const M = { 0: 0, 1: 1 };
 
- /**
+/**
  * Returns the nth number of the Fibonacci series
- * Technique: Memoization aka Dynamic Programming
+ * Technique: Dynamic Programming - Memoization
  * @param {number} n nth number to calculate
  */
 function dFibonacci(n) {

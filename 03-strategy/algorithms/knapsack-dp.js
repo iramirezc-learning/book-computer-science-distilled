@@ -13,7 +13,7 @@ function knapsack(items, maxWeight) {
    * returning the best revenue that can be retrieved
    * by selling items that fit in the bag.
    * Running Time: O(n log n) + DP
-   * Technique: Dynamic Programming
+   * Technique: Dynamic Programming - Memoization
    * @param {number} itemIndex Current item's index
    * @param {number} maxWeight Current left weight in the bag
    */

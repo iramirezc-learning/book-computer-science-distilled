@@ -27,7 +27,7 @@ function calculateSalesValue(items) {
  */
 function knapsack(items, maxWeight) {
   let bestValue = 0;
-  let bestCandidates = null;
+  let bestCandidates = [];
   let combinationValue;
 
   powerSet(items).forEach(combination => {

@@ -6,6 +6,84 @@ describe('Algorithm - Knapsack [Brute Force]', function () {
   const testCases = [
     {
       input: {
+        maxWeight: 10,
+        items: []
+      },
+      expected: {
+        totalWeight: 0,
+        totalRevenue: 0,
+        itemsInBag: []
+      }
+    },
+    {
+      input: {
+        maxWeight: 10,
+        items: [
+          { name: 'A', weight: 5, price: 500 },
+          { name: 'B', weight: 5, price: 400 },
+          { name: 'C', weight: 10, price: 1000 }
+        ]
+      },
+      expected: {
+        totalWeight: 10,
+        totalRevenue: 1000,
+        itemsInBag: [{ name: 'C', weight: 10, price: 1000 }]
+      }
+    },
+    {
+      input: {
+        maxWeight: 10,
+        items: [
+          { name: 'A', weight: 5, price: 1000 },
+          { name: 'B', weight: 5, price: 1000 },
+          { name: 'C', weight: 10, price: 1000 }
+        ]
+      },
+      expected: {
+        totalWeight: 10,
+        totalRevenue: 2000,
+        itemsInBag: [
+          { name: 'A', weight: 5, price: 1000 },
+          { name: 'B', weight: 5, price: 1000 }
+        ]
+      }
+    },
+    {
+      input: {
+        maxWeight: 20,
+        items: [
+          { name: 'A', weight: 5, price: 1000 },
+          { name: 'B', weight: 5, price: 1000 },
+          { name: 'C', weight: 10, price: 1000 }
+        ]
+      },
+      expected: {
+        totalWeight: 20,
+        totalRevenue: 3000,
+        itemsInBag: [
+          { name: 'A', weight: 5, price: 1000 },
+          { name: 'B', weight: 5, price: 1000 },
+          { name: 'C', weight: 10, price: 1000 }
+        ]
+      }
+    },
+    {
+      input: {
+        maxWeight: 10,
+        items: [
+          { name: 'A', weight: 11, price: 300 },
+          { name: 'B', weight: 11, price: 400 },
+          { name: 'C', weight: 11, price: 500 }
+        ]
+      },
+      expected: {
+        totalWeight: 0,
+        totalRevenue: 0,
+        itemsInBag: []
+      }
+    },
+    {
+      input: {
         maxWeight: 4,
         items: [
           {

@@ -1,8 +1,8 @@
 const assert = require('assert');
 
-const knapsack = require('./knapsack-divide-n-conquer');
+const knapsack = require('./knapsack-dnc');
 
-describe('Algorithm - Knapsack [Divide and Conquer] (My Approach)', function () {
+describe('Algorithm - Knapsack [Divide and Conquer]', function () {
   const testCases = [
     {
       input: {

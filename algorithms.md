@@ -45,6 +45,7 @@ List of algorithms and code examples in the book.
 
 * [Merge Sort](./03-strategy/algorithms/merge-sort.js)
 * [Best Trade - Divide and Conquer](./03-strategy/algorithms/best-trade-divide-n-conquer.js)
+* [Knapsack - Divide and Conquer](./03-strategy/algorithms/knapsack-dnc.js)
 * [Knapsack - Divide and Conquer (My approach)](./03-strategy/algorithms/knapsack-divide-n-conquer.js)
 
 ### 3.7 Dynamic Programming

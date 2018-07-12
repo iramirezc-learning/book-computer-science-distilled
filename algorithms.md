@@ -52,7 +52,7 @@ List of algorithms and code examples in the book.
 
 * [Fibonacci - DP](./03-strategy/algorithms/dynamic-fibonacci.js)
 * [Knapsack - DP](./03-strategy/algorithms/knapsack-dp.js)
-* Trade (Bottom-Up)
+* [Best Trade - DP (Bottom-Up)](./03-strategy/algorithms/best-trade-bottom-up.js)
 
 ## Chapter 4. Data
 

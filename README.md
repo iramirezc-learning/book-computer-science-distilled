@@ -40,5 +40,5 @@ npm install -g mocha
 run the tests
 
 ```sh
-mocha ./**/*.spec.js
+npm run test
 ```

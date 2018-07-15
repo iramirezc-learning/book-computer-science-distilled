@@ -72,6 +72,8 @@ function maximum (A, B, C)
   return max
 ```
 
+> Code: [max-of-three-numbers.js](./algorithms/max-of-three-numbers.js)
+
 #### 1.4 - Mathematical Models
 
 **:bulb: Tip:**
@@ -84,8 +86,8 @@ function maximum (A, B, C)
 
 ##### example of a mathematical model:
 
-**Problem: Livestock Fence**
-
+> __Livestock Fence__
+>
 > _Your farm has two types of livestock. You have 100 units of barbed wire to make a rectangular fence for the animals, with a straight division for separating them._
 >
 > _How do you frame the fence in order to maximize the pasture's area?_
@@ -105,23 +107,15 @@ function maximum (A, B, C)
 
 #### 2.1 - Intro
 
-Some of the topics covered in this section:
+Topics covered in this section:
 
 > * Logic statements
 > * Operators
 > * Special Algebra
 
-##### Logic Math
+##### Mathematical Logic
 
-> `true`
->
-> `false`
-
-##### Common math operators:
-
-> variables
->
-> operators: `+` `/` `*` `-`
+> _variables_ and _operators_ represent validity of things, expressing `true` or `false` values
 
 #### 2.2 - Operators
 
@@ -136,8 +130,8 @@ Some of the topics covered in this section:
 
 ##### IMPLIES (implication)
 
-Dependency between variables
-
+> Dependency between variables
+>
 > `A -> B` implies that `B` depends on `A` to be `true`
 >
 > Example: _If it rains, then I'll take my umbrella_
@@ -300,6 +294,8 @@ Boolean Algebra simplifies logical expressions.
 ### Section 3: Counting
 
 #### 3.1 - Intro
+
+> __Counting__ and __Logic__ belong to an important field to computer science called __Discrete Mathematics__.
 
 #### 3.2 - Multiplying
 

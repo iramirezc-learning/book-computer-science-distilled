@@ -16,8 +16,8 @@ function calculateSalesValue(items) {
 
 /**
  * Callback for sorting by price.
- * @param {number} a First number
- * @param {number} b Second number
+ * @param {object} a First item
+ * @param {object} b Second item
  */
 function sortByPrice(a, b) {
   return b.price - a.price;

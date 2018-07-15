@@ -54,6 +54,10 @@ List of algorithms and code examples in the book.
 * [Knapsack - DP](./03-strategy/algorithms/knapsack-dp.js)
 * [Best Trade - DP (Bottom-Up)](./03-strategy/algorithms/best-trade-bottom-up.js)
 
+### 3.8 Branch and Bound
+
+* [Powdered Knapsack - Heuristics](./03-strategy/algorithms/powdered-knapsack.js)
+
 ## Chapter 4. Data
 
 ## Chapter 5. Algorithms

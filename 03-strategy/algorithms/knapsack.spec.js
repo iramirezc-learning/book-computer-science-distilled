@@ -159,12 +159,34 @@ describe('Algorithm - Knapsack [Brute Force]', function () {
           }
         ]
       }
+    },
+    {
+      input: {
+        maxWeight: 10,
+        items: [
+          { name: 'A', price: 20, weight: 5 },
+          { name: 'B', price: 19, weight: 4 },
+          { name: 'C', price: 16, weight: 2 },
+          { name: 'D', price: 14, weight: 5 },
+          { name: 'E', price: 13, weight: 3 },
+          { name: 'F', price: 9, weight: 2 }
+        ]
+      },
+      expected: {
+        totalWeight: 10,
+        totalRevenue: 49,
+        itemsInBag: [
+          { name: 'A', price: 20, weight: 5 },
+          { name: 'C', price: 16, weight: 2 },
+          { name: 'E', price: 13, weight: 3 }
+        ]
+      }
     }
   ];
 
   testCases.forEach(({ input, expected }) => {
-    const {items, maxWeight} = input;
-    const {itemsInBag, totalWeight, totalRevenue} = expected;
+    const { items, maxWeight } = input;
+    const { itemsInBag, totalWeight, totalRevenue } = expected;
 
     it(`should return the items: ${itemsInBag.map(i => i.name)}`, function () {
       const result = knapsack(items, maxWeight);

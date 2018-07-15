@@ -114,6 +114,22 @@ describe('Algorithm - Knapsack [Divide and Conquer] (My Approach)', function () 
       expected: {
         totalRevenue: 23500
       }
+    },
+    {
+      input: {
+        maxWeight: 10,
+        items: [
+          { name: 'A', price: 20, weight: 5 },
+          { name: 'B', price: 19, weight: 4 },
+          { name: 'C', price: 16, weight: 2 },
+          { name: 'D', price: 14, weight: 5 },
+          { name: 'E', price: 13, weight: 3 },
+          { name: 'F', price: 9, weight: 2 }
+        ]
+      },
+      expected: {
+        totalRevenue: 49
+      }
     }
   ];
 

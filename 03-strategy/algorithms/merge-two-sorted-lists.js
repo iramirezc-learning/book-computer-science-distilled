@@ -1,5 +1,7 @@
 /**
  * Merges two ordered lists into one.
+ * Running Time: O(n)
+ * Technique: Iteration
  * @param {array} list1 sorted list one
  * @param {array} list2 sorted list two
  */

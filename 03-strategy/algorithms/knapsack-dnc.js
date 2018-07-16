@@ -1,5 +1,5 @@
 /**
- * Preparares data for Recursive Knapsack Algorithm
+ * Prepares data for Recursive Knapsack Algorithm
  * @param {Array} items
  * @param {number} maxWeight
  */

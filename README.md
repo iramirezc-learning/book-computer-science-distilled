@@ -16,7 +16,7 @@ Code exercises, examples and personal notes.
 
 * [Chapter 2: Complexity](./02-complexity/summary.md)
 
-* Chapter 3. Strategy
+* [Chapter 3. Strategy](./03-strategy/summary.md)
 
 * Chapter 4. Data
 

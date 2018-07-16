@@ -299,32 +299,60 @@ Boolean Algebra simplifies logical expressions.
 
 #### 3.2 - Multiplying
 
+![Multiplying notes](./img/multiplying.jpg)
+
 #### 3.3 - Permutations
+
+![Permutation notes 1](./img/permutations-1.jpg)
+![Permutation notes 2](./img/permutations-2.jpg)
 
 #### 3.4 - Permutations with identical items
 
+![Permutation notes 3](./img/permutations-3.jpg)
+![Permutation notes 4](./img/permutations-4.jpg)
+
 #### 3.5 - Combinations
 
+![Combinations notes 1](./img/combinations-1.jpg)
+![Combinations notes 2](./img/combinations-2.jpg)
+
 #### 3.6 - Sums
+
+![Sums notes 1](./img/sums-1.jpg)
+![Sums notes 2](./img/sums-2.jpg)
 
 ---
 
 ### Section 4: Probability
 
-#### 4.1 - Intro
+#### 4.1 - Counting Outcomes
 
-#### 4.2 - Counting Outcomes
+![Probability notes 1](./img/probability-1.jpg)
 
-#### 4.3 - Independent Events
+#### 4.2 - Independent Events
 
-#### 4.4 - Mutually Exclusive Events
+![Probability notes 2](./img/probability-2.jpg)
 
-#### 4.5 - Complementary Events
+#### 4.3 - Mutually Exclusive Events
 
-#### 4.6 - The Gambler's Fallacy
+![Probability notes 3](./img/probability-3.jpg)
 
-#### 4.7 - Advanced Probabilities
+#### 4.4 - Complementary Events
+
+![Probability notes 4](./img/probability-4.jpg)
+
+#### 4.5 - The Gambler's Fallacy
+
+> "Past events never affect the outcome of an independent event."
 
 ## References:
 
 * [Logical Operations and Truth Tables](http://kias.dyndns.org/comath/21.html)
+
+### In the book:
+
+* [xkcd: An Apple for a Dollar](https://xkcd.com/)
+* [Programmer's Life (@ProgrammersLife) | Twitter](https://twitter.com/programmerslife)
+* [Wolfram|Alpha: Computational Intelligence](https://www.wolframalpha.com/)
+* [Solving the Zebra Puzzle with Boolean Algebra](https://code.energy/solving-zebra-puzzle/)
+* Discrete Mathematics and its Applications, 7th Edition

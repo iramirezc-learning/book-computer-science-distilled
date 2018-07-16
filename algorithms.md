@@ -57,6 +57,7 @@ List of algorithms and code examples in the book.
 ### 3.8 Branch and Bound
 
 * [Powdered Knapsack - Heuristics](./03-strategy/algorithms/powdered-knapsack.js)
+* Knapsack - Branch and Bound
 
 ## Chapter 4. Data
 

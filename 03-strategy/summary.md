@@ -401,3 +401,6 @@ function powdered_knapsack (items, max_weight)
 ### In the book:
 
 * [Geek&Poke](http://geek-and-poke.com/)
+* [Algorithm Design: 9780321295354: Computer Science Books @ Amazon.com](https://www.amazon.com/dp/0321295358/)
+* [Choosing Best Algorithm Design Strategy For A Particular Problem](http://www.gdeepak.com/pubs/intcon/Choosing%20Best%20Algorithm%20Design%20Strategy%20For%20A%20Particular%20Problem.pdf)
+* [Dynamic programming](https://people.eecs.berkeley.edu/~vazirani/algorithms/chap6.pdf)

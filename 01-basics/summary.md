@@ -254,6 +254,8 @@ Boolean Algebra simplifies logical expressions.
 >
 > `!A AND !B = !(A OR B)`
 
+###### Problem: [Hot Server](./problems/hot-server.md)
+
 #### 2.4 - Truth Tables
 
 ##### A truth table has...
@@ -282,6 +284,8 @@ Boolean Algebra simplifies logical expressions.
 > `3` variables = `8` possible combinations:
 >
 > $2^3 = 8$
+
+###### Problem: [Fragile System](./problems/fragile-system.md)
 
 #### 2.5 - Logic in Computing
 

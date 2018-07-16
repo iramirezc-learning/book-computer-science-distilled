@@ -9,13 +9,12 @@ Code exercises, examples and personal notes.
 ## Quick Reference
 
 * See the [Algorithms List](./algorithms.md)
-* See the [Problems List](./problems.md)
 
 ## Summaries
 
 * [Chapter 1. Basics](./01-basics/summary.md)
 
-* Chapter 2: Complexity
+* [Chapter 2: Complexity](./02-complexity/summary.md)
 
 * Chapter 3. Strategy
 

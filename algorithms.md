@@ -61,6 +61,10 @@ List of algorithms and code examples in the book.
 
 ## Chapter 4. Data
 
+### 4.2 Common Abstractions
+
+* [The Stack](./04-data/data-structures/Stack.js)
+
 ## Chapter 5. Algorithms
 
 ## Chapter 6. Databases

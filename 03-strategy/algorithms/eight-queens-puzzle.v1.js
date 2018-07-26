@@ -32,7 +32,7 @@ const Square = (function () {
     /**
      * List of attackers to this Square.
      * @name Square#attackedBy
-     * @type Array
+     * @type {Array}
      */
     this.attackedBy = Object.create(null);
   }
@@ -91,21 +91,21 @@ const Board = (function () {
     /**
      * Board Size.
      * @name Board#boardSize
-     * @type number
+     * @type {number}
      */
     this.boardSize = boardSize;
 
     /**
      * ChessBoard.
      * @name Board#board
-     * @type Array
+     * @type {Array}
      */
     this._board = new Array(boardSize);
 
     /**
      * Number of Queens.
      * @name Board#queens
-     * @type number
+     * @type {number}
      */
     this.queens = 0;
 

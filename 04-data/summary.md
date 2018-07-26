@@ -68,9 +68,17 @@
 
 > a pile of items where you can only work with the one at the top
 >
-> processing data this way is known as LIFO (Last-In, First-Out)
+> processing data this way is also known as **LIFO** (Last-In, First-Out)
 
 #### The Queue
+
+> Code: [Queue.js](./data-structures/Queue.js)
+
+##### What is a Queue?
+
+> is just like any real queue. Image a queue of people for a concert where the new person goes to the end of the line
+>
+> processing data this way is also known as **FIFO** (First-In, First-Out)
 
 #### The Priority Queue
 

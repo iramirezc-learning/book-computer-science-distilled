@@ -1,3 +1,5 @@
+const defineProperty = Object.defineProperty;
+
 /**
  * Node of a Stack
  * @class
@@ -7,20 +9,41 @@ const Node = (function () {
    * Initializes a new instance of a Node
    * @constructs Node
    * @param {*} value The holding value
-   * @param {object|null} next The next node in the Stack
+   * @param {Node|null} next The next node in the Stack
    */
-  function Node(value, next) {
-    Object.defineProperties(this, {
-      value: {
-        get() { return value; }
-      },
-      next: {
-        get() { return next; }
-      }
+  function Node(value, next = null) {
+    /**
+     * Node's value
+     * @name Node#_value
+     * @type {*}
+     */
+    this._value;
+
+    defineProperty(this, '_value', {
+      get() { return value; } /* static value */
+    });
+
+    /**
+     * Pointer to the next Node
+     * @name Node#_next
+     * @type {Node}
+     */
+    this._next;
+
+    defineProperty(this, '_next', {
+      get() { return next; } /* static value */
     });
 
     return this;
   }
+
+  /**
+   * Returns the value as string
+   * @function Node#toString
+   */
+  Node.prototype.toString = function () {
+    return String(this._value);
+  };
 
   return Node;
 })();
@@ -38,14 +61,15 @@ const Stack = (function () {
    */
   function Stack() {
     /**
-     * Top
-     * @name Stack#top
-     * @type object
+     * Top Node in the Stack
+     * @name Stack#_top
+     * @type {Node|null}
      */
-    Object.defineProperty(this, 'top', {
-      enumerable: true,
+    this._top;
+
+    defineProperty(this, '_top', {
       writable: true,
-      value: null
+      value: null /* default */
     });
 
     return this;
@@ -56,7 +80,7 @@ const Stack = (function () {
    * @function Stack#isEmpty
    */
   Stack.prototype.isEmpty = function () {
-    return this.top === null;
+    return this._top === null;
   };
 
   /**
@@ -64,7 +88,7 @@ const Stack = (function () {
    * @function Stack#peek
    */
   Stack.prototype.peek = function () {
-    return this.top.value;
+    return this._top._value;
   };
 
   /**
@@ -73,8 +97,8 @@ const Stack = (function () {
    * @param {*} value Value to be stored
    */
   Stack.prototype.push = function (value) {
-    const node = new Node(value, this.top);
-    this.top = node;
+    const node = new Node(value, this._top);
+    this._top = node;
 
     return this;
   };
@@ -88,12 +112,37 @@ const Stack = (function () {
       throw new Error('Stack is empty.');
     }
 
-    const currentTop = this.top;
+    const currentTop = this._top;
 
-    this.top = currentTop.next;
+    this._top = currentTop._next;
 
-    return currentTop.value;
+    return currentTop._value;
   };
+
+  /**
+   * Returns the stack as string
+   * Note: could this be considrered as hacking the Stack?
+   * @function Stack#toString
+   */
+  Stack.prototype.toString = function () {
+    if (this.isEmpty()) {
+      return '[Empty Stack]';
+    }
+
+    let stackAsString = '';
+    let currentNode = this._top;
+
+    while (currentNode) {
+      stackAsString += String(currentNode);
+      currentNode = currentNode._next;
+
+      if (currentNode) {
+        stackAsString += '\n';
+      }
+    }
+
+    return stackAsString;
+  }
 
   return Stack;
 })();

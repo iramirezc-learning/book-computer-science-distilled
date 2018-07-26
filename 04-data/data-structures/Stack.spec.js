@@ -53,4 +53,14 @@ describe('Data Structure - Stack', function () {
     assert.deepEqual(retrievedData, data, 'incorrect retrieved data');
     assert.equal(stack.isEmpty(), true, 'stack should be empty');
   });
+
+  it('should return the stack as string', function () {
+    const data = [1, 2, 3, 4, 5, false, {}, [], 'hello'];
+
+    assert.equal(stack.toString(), '[Empty Stack]', 'incorrect empty stack as string');
+
+    data.forEach(d => stack.push(d));
+
+    assert.equal(stack.toString(), data.reverse().join('\n'), 'incorrect stack as string');
+  });
 });

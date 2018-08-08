@@ -18,7 +18,7 @@ describe('Data Structure - Queue', function () {
   });
 
   it('should throw an exception if trying to dequeue on an empty queue', function () {
-    assert.throws(() => { queue.dequeue() }, /^Error: Queue is empty.$/, 'queue is not throwing an Error');
+    assert.throws(() => { queue.dequeue() }, /^Error: Queue is empty\.$/, 'queue is not throwing an Error');
   });
 
   it('should enqueue and dequeue the first item correctly', function () {

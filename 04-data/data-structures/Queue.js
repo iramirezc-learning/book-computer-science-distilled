@@ -9,7 +9,7 @@ const Node = (function () {
    * Initializes a new instance of a Node
    * @constructs Node
    * @param {*} value The holding value
-   * @param {Node|null} next The next node in the Queue
+   * @param {(Node|null)} next The next node in the Queue
    */
   function Node(value, next = null) {
     /**
@@ -26,7 +26,7 @@ const Node = (function () {
     /**
      * Pointer to the next Node
      * @name Node#_next
-     * @type {Node}
+     * @type {(Node|null)}
      */
     this._next;
 
@@ -64,7 +64,7 @@ const Queue = (function () {
     /**
      * First Node in the Queue
      * @name Queue#_first
-     * @type {Node|null}
+     * @type {(Node|null)}
      */
     this._first;
 

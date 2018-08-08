@@ -18,7 +18,7 @@ describe('Data Structure - Stack', function () {
   });
 
   it('should throw an exception if trying to pop on a empty stack', function () {
-    assert.throws(() => { stack.pop() }, /^Error: Stack is empty.$/, 'Stack not throwing an Error');
+    assert.throws(() => { stack.pop() }, /^Error: Stack is empty\.$/, 'Stack not throwing an Error');
   });
 
   it('should push and peek the top item correctly', function () {

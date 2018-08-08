@@ -82,6 +82,14 @@
 
 #### The Priority Queue
 
+> Code: [PriorityQueue.js](./data-structures/PriorityQueue.js)
+
+##### What's a PriorityQueue?
+
+> is just like the Queue but elements are enqueued by their priority.
+>
+> imagine a line of patients waiting to be the attended in a hospital, patients with the most critical status will be attended first because they have higher priority
+
 #### The List
 
 #### The Sorted List

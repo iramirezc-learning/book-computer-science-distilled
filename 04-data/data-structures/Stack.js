@@ -1,54 +1,6 @@
+const Node = require('./Node');
+
 const defineProperty = Object.defineProperty;
-
-/**
- * Node of a Stack
- * @class
- */
-const Node = (function () {
-  /**
-   * Initializes a new instance of a Node
-   * @constructs Node
-   * @param {*} value The holding value
-   * @param {Node|null} next The next node in the Stack
-   */
-  function Node(value, next = null) {
-    /**
-     * Node's value
-     * @name Node#_value
-     * @type {*}
-     */
-    this._value;
-
-    defineProperty(this, '_value', {
-      get() { return value; } /* static value */
-    });
-
-    /**
-     * Pointer to the next Node
-     * @name Node#_next
-     * @type {Node}
-     */
-    this._next;
-
-    defineProperty(this, '_next', {
-      get() { return next; } /* static value */
-    });
-
-    return this;
-  }
-
-  /**
-   * Returns the value as string
-   * @function Node#toString
-   */
-  Node.prototype.toString = function () {
-    return String(this._value);
-  };
-
-  return Node;
-})();
-
-// ==================================================
 
 /**
  * Stack
@@ -97,7 +49,10 @@ const Stack = (function () {
    * @param {*} value Value to be stored
    */
   Stack.prototype.push = function (value) {
-    const node = new Node(value, this._top);
+    const node = new Node(value);
+
+    node.setNext(this._top);
+
     this._top = node;
 
     return this;
@@ -114,7 +69,7 @@ const Stack = (function () {
 
     const currentTop = this._top;
 
-    this._top = currentTop._next;
+    this._top = currentTop.next;
 
     return currentTop._value;
   };
@@ -134,7 +89,7 @@ const Stack = (function () {
 
     while (currentNode) {
       stackAsString += String(currentNode);
-      currentNode = currentNode._next;
+      currentNode = currentNode.next;
 
       if (currentNode) {
         stackAsString += '\n';

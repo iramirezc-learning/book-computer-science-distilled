@@ -1,55 +1,6 @@
+const Node = require('./Node');
+
 const defineProperty = Object.defineProperty;
-
-/**
- * Node of a Queue
- * @class
- */
-const Node = (function () {
-  /**
-   * Initializes a new instance of a Node
-   * @constructs Node
-   * @param {*} value The holding value
-   * @param {(Node|null)} next The next node in the Queue
-   */
-  function Node(value, next = null) {
-    /**
-     * Node's value
-     * @name Node#_value
-     * @type {*}
-     */
-    this._value;
-
-    defineProperty(this, '_value', {
-      get() { return value; } /* static value */
-    });
-
-    /**
-     * Pointer to the next Node
-     * @name Node#_next
-     * @type {(Node|null)}
-     */
-    this._next;
-
-    defineProperty(this, '_next', {
-      writable: true, /* queues should be able to update next node */
-      value: next
-    });
-
-    return this;
-  }
-
-  /**
-   * Returns the value as string
-   * @function Node#toString
-   */
-  Node.prototype.toString = function () {
-    return String(this._value);
-  };
-
-  return Node;
-})();
-
-// ==================================================
 
 /**
  * Queue
@@ -90,18 +41,18 @@ const Queue = (function () {
    * @param {*} value Value to be enqueued
    */
   Queue.prototype.enqueue = function (value) {
-    const node = new Node(value, null);
+    const node = new Node(value);
 
     if (this.isEmpty()) {
       this._first = node;
     } else {
       let lastNode = this._first;
 
-      while (lastNode._next !== null) {
-        lastNode = lastNode._next;
+      while (lastNode.hasNext()) {
+        lastNode = lastNode.next;
       }
 
-      lastNode._next = node;
+      lastNode.next = node;
     }
 
     return this;
@@ -118,8 +69,8 @@ const Queue = (function () {
 
     const currentFirst = this._first;
 
-    if (currentFirst._next) {
-      this._first = currentFirst._next;
+    if (currentFirst.hasNext()) {
+      this._first = currentFirst.next;
     } else {
       this._first = null;
     }
@@ -141,7 +92,7 @@ const Queue = (function () {
 
     while (currentNode) {
       queueAsString += String(currentNode);
-      currentNode = currentNode._next;
+      currentNode = currentNode.next;
 
       if (currentNode) {
         queueAsString += ',';

@@ -92,6 +92,12 @@
 
 #### The List
 
+> Code: [List.js](./data-structures/List.js)
+
+##### What's a List?
+
+> is a more flexible ADT in which you can `insert`, `remove` and `get` elements at any position. Functionality like `sort`, `reverse` and `slice` is also available.
+
 #### The Sorted List
 
 #### The Map

@@ -46,7 +46,7 @@ const SortedList = (function () {
 
   /**
    * Initializes an instance of a SortedList
-   * @constructs
+   * @constructs SortedList
    */
   function SortedList() {
     /**

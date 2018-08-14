@@ -100,6 +100,12 @@
 
 #### The Sorted List
 
+> Code: [SortedList.js](./data-structures/SortedList.js)
+
+##### What's a Sorted List?
+
+> is a lighter version of a List in which you can `insert`, `remove` and `get` elements at any position. Items are inserted in Lexicographical order, that way the list is always sorted.
+
 #### The Map
 
 #### The Set

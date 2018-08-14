@@ -90,15 +90,15 @@ const List = (function () {
    * @param {Number=} [position = last] `n`th position
    */
   List.prototype.getNode = function (position) {
-    if (isUndefined(position)) {
-      position = this.length;
-    } else {
-      validatePositiveNumber(position, 'position');
-    }
-
     if (this.isEmpty()) {
       throw new Error('List is empty.');
     } else {
+      if (isUndefined(position)) {
+        position = this.length - 1;
+      } else {
+        validatePositiveNumber(position, 'position');
+      }
+
       let currentNode = this.first;
       let currentPosition = 0;
 
@@ -151,32 +151,22 @@ const List = (function () {
    * @param {Number=} [position = last] `n`th item's position to remove
    */
   List.prototype.remove = function (position) {
-    if (isUndefined(position)) {
-      position = this.length - 1;
+    let nodeToRemove = this.getNode(position);
+    const length = this.length;
+
+    if (position === 0 || length === 1) {
+      this.first = this.first.getNext();
     } else {
-      validatePositiveNumber(position, 'position');
-    }
-
-    if (this.isEmpty()) {
-      throw new Error('List is empty.');
-    } else {
-      if (position === 0 || this.length === 1) {
-        let currentFirst = this.first;
-        this.first = currentFirst.getNext();
-        return currentFirst.value;
-      } else {
-        if (position > this.length) {
-          position = this.length; /* get last item */
-        }
-
-        let prevNode = this.getNode(position - 1);
-        let nodeToRemove = this.getNode(position);
-
-        prevNode.setNext(nodeToRemove.getNext());
-
-        return nodeToRemove.value;
+      if (isUndefined(position)) {
+        position = length - 1;
       }
+
+      let prevNode = this.getNode(position - 1);
+
+      prevNode.setNext(nodeToRemove.getNext());
     }
+
+    return nodeToRemove.value;
   };
 
   /**
@@ -259,9 +249,9 @@ const List = (function () {
   };
 
   /**
-  * Returns the list as string
-  * @function List#toString
-  */
+   * Returns the list as string
+   * @function List#toString
+   */
   List.prototype.toString = function () {
     if (this.isEmpty()) {
       return '[Empty List]';

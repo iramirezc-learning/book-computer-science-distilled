@@ -108,6 +108,12 @@
 
 #### The Map
 
+> Code: [Map.js](./data-structures/Map.js)
+
+##### What's a Map?
+
+> is a dictionary of key => values
+
 #### The Set
 
 ---

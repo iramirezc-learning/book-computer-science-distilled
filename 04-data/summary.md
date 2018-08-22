@@ -112,9 +112,15 @@
 
 ##### What's a Map?
 
-> is a dictionary of key => values
+> is a dictionary of key => values pairs.
 
 #### The Set
+
+> Code: [Set.js](./data-structures/Set.js)
+
+##### What's a Set?
+
+> is an **unordered** collection of **unique** items.
 
 ---
 

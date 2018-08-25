@@ -2,7 +2,7 @@ const assert = require('assert');
 
 const List = require('./List');
 
-describe('Data Structure - List', function () {
+describe('Data Structure - List aka Linked List', function () {
   /** @type {List} */
   let list;
 

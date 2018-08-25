@@ -31,7 +31,7 @@ function validatePositiveNumber(n, parameterName) {
 }
 
 /**
- * List
+ * Linked List
  * @class List
  */
 const List = (function () {

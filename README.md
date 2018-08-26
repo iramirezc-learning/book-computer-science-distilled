@@ -41,3 +41,19 @@ run the tests
 ```sh
 npm run test
 ```
+
+## Docs for Data Structures
+
+install `documentation.js` globally
+
+```sh
+npm install -g documentation
+```
+
+generate the `docs` folder
+
+```sh
+npm run docs:build:data-structures
+```
+
+this will be generated inside the `04-data` folder.

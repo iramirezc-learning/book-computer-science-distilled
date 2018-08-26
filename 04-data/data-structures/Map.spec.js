@@ -3,7 +3,10 @@ const assert = require('assert');
 const Map = require('./Map');
 
 describe('Data Structure - Map', function () {
-  /** @type {Map} */
+  /**
+   * @type {Map}
+   * @private
+   */
   let map;
 
   beforeEach(function () {

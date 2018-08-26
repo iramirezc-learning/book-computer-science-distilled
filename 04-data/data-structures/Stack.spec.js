@@ -3,7 +3,10 @@ const assert = require('assert');
 const Stack = require('./Stack');
 
 describe('Data Structure - Stack', function () {
-  /** @type {Stack} */
+  /**
+   * @type {Stack}
+   * @private
+   */
   let stack;
 
   beforeEach(function () {

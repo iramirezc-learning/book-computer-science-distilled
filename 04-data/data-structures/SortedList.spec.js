@@ -3,7 +3,10 @@ const assert = require('assert');
 const SortedList = require('./SortedList');
 
 describe('Data Structure - SortedList', function () {
-  /** @type {SortedList} */
+  /**
+   * @type {SortedList}
+   * @private
+   */
   let sortedList;
 
   const EMPTY_LIST = '[Empty SortedList]';

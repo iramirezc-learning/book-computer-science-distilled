@@ -3,7 +3,10 @@ const assert = require('assert');
 const Set = require('./Set');
 
 describe('Data Structure - Set', function () {
-  /** @type {Set} */
+  /**
+   * @type {Set}
+   * @private
+   */
   let set;
 
   const NAN_ERROR = /^TypeError: Sorry\. I do not support NaN values\.$/;

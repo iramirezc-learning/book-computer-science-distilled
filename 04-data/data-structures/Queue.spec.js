@@ -3,7 +3,10 @@ const assert = require('assert');
 const Queue = require('./Queue');
 
 describe('Data Structure - Queue', function () {
-  /** @type {Queue} */
+  /**
+   * @type {Queue}
+   * @private
+   */
   let queue;
 
   beforeEach(function () {

@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "test": "mocha './**/*.spec.js'"
+    "test": "mocha './**/*.spec.js'",
+    "docs:build:data-structures": "documentation build 04-data/data-structures/*.js -f html -o 04-data/docs"
   }
 }

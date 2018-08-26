@@ -3,12 +3,15 @@ const assert = require('assert');
 const List = require('./List');
 
 describe('Data Structure - List aka Linked List', function () {
-  /** @type {List} */
+  /**
+   * @type {List}
+   * @private
+   */
   let list;
 
   const EMPTY_LIST = '[Empty List]';
   const EMPTY_LIST_ERROR = /^Error: List is empty\.$/;
-  const POSITIVE_INTEGER_ERROR = /^Error: ".+" should be an Integer greater than or equal to 0\. Given: .+$/;
+  const POSITIVE_INTEGER_ERROR = /^TypeError: ".+" should be an Integer greater than or equal to 0\. Given: .+$/;
   const SLICE_ERROR = /^Error: start: .+ should not be greater than end: .+$/
 
   beforeEach(function () {

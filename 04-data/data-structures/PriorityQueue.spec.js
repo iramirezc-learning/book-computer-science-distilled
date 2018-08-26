@@ -7,7 +7,10 @@ function byPriority(a, b) {
 }
 
 describe('Data Structure - PriorityQueue', function () {
-  /** @type {PriorityQueue} */
+  /**
+   * @type {PriorityQueue}
+   * @private
+   */
   let priorityQueue;
 
   beforeEach(function () {

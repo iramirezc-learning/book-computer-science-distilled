@@ -83,7 +83,7 @@ function List() {
 /**
  * Checks if the list is empty.
  * @function List#isEmpty
- * @returns {boolean} Wheter the list is empty or not.
+ * @returns {boolean} Whether the list is empty or not.
  */
 List.prototype.isEmpty = function () {
   return this.first === null;
@@ -111,9 +111,7 @@ List.prototype.getNode = function (position) {
     let currentPosition = 0;
 
     while (currentNode.hasNext()) {
-      if (currentPosition === position) {
-        break;
-      }
+      if (currentPosition === position) break;
       currentPosition++;
       currentNode = currentNode.getNext();
     }

@@ -30,7 +30,7 @@ describe('Data Structure - List aka Linked List', function () {
   });
 
   it('should start empty', function () {
-    assert.equal(list.isEmpty(), true, 'list did not empty');
+    assert.equal(list.isEmpty(), true, 'list did not start empty');
     assert.equal(list.length, 0, 'length should be 0');
   });
 

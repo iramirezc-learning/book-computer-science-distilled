@@ -126,15 +126,88 @@
 
 ### Section 3: Structures
 
+> Data Structures provides ways to implement ADT. ADT are built on top of data structures.
+>
+> ADT don't describe how something works, Data Structures describe how data is stored.
+
 #### The Array
+
+> Arrays are stored in memory in sequence. They have fixed size of each element.
+>
+> **Advantages:**
+>
+> Arrays are useful to implement **Stacks**, **Lists** and **Queues**. Arrays provide instant access to its elements by index.
+>
+> **Drawbacks:**
+>
+> Arrays can be dificult to modify, for instance, by trying to remove an element, memory should be reacollated.
+> For big inputs it may not be enough space, since memory should be reserved in sequence.
+>
+> [Arrays in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 #### The Linked List
 
-#### The Double Linked List
+> Linked Lists are stored in different places in memory and they keep reference to the next item with a pointer.
+>
+> **Advantages:**
+>
+> Linked Lists are also useful to implement [Stacks](./data-structures/Stack.js), [Lists](./data-structures/List.js) and [Queues](./data-structures/Queue.js).
+> We can take more advantage of memory since they're not required to be in sequence.
+>
+> **Drawbacks:**
+>
+> In order to get the `nth` element in a linked list, you should start from the first and start couting.
+> We can not know the previous item of a current item easy, we need to iterate over all items from the first one until the `n - 1` item.
+>
+> Code: [LinkedList.js](./data-structures/List.js)
+
+#### The Doubly Linked List
+
+> The Doubly Linked List is the same as a Linked List with an extra pointer, pointing to the previous element.
+>
+> **Advantages:**
+>
+> It is easier to delete items in the middle. We can iterate forward and backwards in the list.
+>
+> **Drawbacks:**
+>
+> We still need to iterate over all items starting from the first one to access any `nth` item.
+> Implemetation is more complex in code.
+> More memory space required to store the pointer.
+>
+> Code: [DoublyLinkedList.js](./data-structures/DoublyLinkedList.js)
 
 #### Arrays vs. Linked Lists
 
+> Some feature-rich programming languages have some of the ADT built-in. We can make used of this generic implementations when performance is not an issue, otherwise, we should consider to implement the best ADT for a specific problem and also when working with low-level programming languages.
+>
+> **Use Arrays when:**
+> * Accessing data in a random or unordered way.
+> * Length of values is fixed or it will never change.
+> * Need instant access to elements.
+>
+> **Use Linked Lists when:**
+> * Adding/removing elements in a faster way and in the middle of the list.
+> * Length can be variable.
+> * No need to access data in a random way.
+
 #### The Tree
+
+> Like the Linked List, Trees do not use contiguous memory cells in physical memory to store objects. Unlike the Linked List, values and pointers are not arranged in a linear chain but in a tree-like structure.
+>
+> * **node**: A cell in the tree. Must have one single parent, except from the root node.
+> * **root**: The top-most node of a Tree. Doesn't have a parent.
+> * **edge**: A pointer from one node to another.
+> * **parent**: The parent of a node
+> * **children**: The children of a node
+> * **antecesors**: Parent, grandparent, great-grandparent of a node.
+> * **decendants**: Children, grand-children, ... of a node.
+> * **siblings**: Nodes that share the same parent.
+> * **leaf**: Nodes with no children.
+> * **path**: The set of nodes and edges to lead from one node to another.
+> * **height**: The number of levels from the the root node to the deepest node in the tree.
+> * **level**: Position of a node in the tree in respect of the root node.
+> * **forest**: A set of trees.
 
 #### Binary Search Tree
 

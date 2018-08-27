@@ -4,11 +4,11 @@ _**Computer Science Distilled** by Wladston Ferreira Filho_.
 
 Code exercises, examples and personal notes.
 
-> **reading in progress...**
+> :warning: **reading in progress...**
 
 ## Quick Reference
 
-* See the [Algorithms List](./algorithms.md)
+* See the [Algorithms & Data Structures List](./algorithms.md)
 
 ## Summaries
 
@@ -18,7 +18,7 @@ Code exercises, examples and personal notes.
 
 * [Chapter 3. Strategy](./03-strategy/summary.md)
 
-* Chapter 4. Data
+* [Chapter 4. Data (incomplete)](./04-data/summary.md)
 
 * Chapter 5. Algorithms
 

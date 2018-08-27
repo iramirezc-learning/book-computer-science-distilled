@@ -57,13 +57,30 @@ List of algorithms and code examples in the book.
 ### 3.8 Branch and Bound
 
 * [Powdered Knapsack - Heuristics](./03-strategy/algorithms/powdered-knapsack.js)
-* Knapsack - Branch and Bound
+* TODO: Knapsack - Branch and Bound
 
 ## Chapter 4. Data
 
 ### 4.2 Common Abstractions
 
 * [The Stack](./04-data/data-structures/Stack.js)
+* [The Queue](./04-data/data-structures/Queue.js)
+* [The Priority Queue](./04-data/data-structures/PriorityQueue.js)
+* [The List](./04-data/data-structures/List.js)
+* [The Sorted List](./04-data/data-structures/SortedList.js)
+* [The Map](./04-data/data-structures/Map.js)
+* [The Set](./04-data/data-structures/Set.js)
+
+### 4.3 Data Structures
+
+* [The Array (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+* [The Linked List](./04-data/data-structures/List.js)
+* [The Doubly Linked List](./04-data/data-structures/DoublyLinkedList.js)
+* The Tree
+* The Binary Search Tree
+* The Binary Heap
+* The Graph
+* The Hash Table
 
 ## Chapter 5. Algorithms
 

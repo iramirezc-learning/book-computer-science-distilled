@@ -1,6 +1,15 @@
 {
+  "name": "computer-science-distilled-book",
+  "version": "1.0.0",
+  "description": "Personal notes from the book Computer Science Distilled",
   "scripts": {
     "test": "mocha './**/*.spec.js'",
     "docs:build:data-structures": "documentation build 04-data/data-structures/*.js -f html -o 04-data/docs"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iramirezc/computer-science-distilled-book.git"
+  },
+  "author": "Isaac Ramírez <iramirezc@live.com.mx>",
+  "license": "ISC"
 }
